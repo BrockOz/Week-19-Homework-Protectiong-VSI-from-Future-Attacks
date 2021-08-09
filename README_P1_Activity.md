@@ -21,7 +21,7 @@
 
 	- `source="windows_server_logs.csv" | top  status`
 	![Search](/Images/Part_1-Activity/P1_search_top_status.PNG)
-	![Report](/Images/Part_1-Activity/P1_Report_top_status.PNG)
+	![Report](/Images/Part_1-Activity/P1_Report_Windows_status.PNG)
 
 
 **Alerts**: Design the following alerts to notify VSI of suspicious activity.
@@ -142,20 +142,20 @@ On your dashboard, add the ability to change the time range for all your visuali
 1. A report that shows a table of the different HTTP methods (GET, POST, HEAD, etc).
 
 	- `source="apache_logs.txt" | top method`
-	![Search](/Images/Part_1-Activity/P2_search_Differnt_HTTP_Methods)
-	![Report](/Images/Part_1-Activity/P2_Report_Differnt_HTTP_Methods.PNG)	
+	![Search](/Images/Part_2-Activity/P2_search_Differnt_HTTP_Methods.PNG)
+	![Report](/Images/Part_2-Activity/P2_Report_Differnt_HTTP_Methods.PNG)	
 
 2. A report that shows the top 10 domains that referred to VSI's website.
 
 	- `source="apache_logs.txt" | top limit=10 referer_domain`
-	![Search](/Images/Part_1-Activity/P2_search_Top_10_Domains.PNG)
-	![Report](/Images/Part_1-Activity/P2_Report_Top_10_Domains.PNG)	
+	![Search](/Images/Part_2-Activity/P2_search_Top_10_Domains.PNG)
+	![Report](/Images/Part_2-Activity/P2_Report_Top_10_Domains.PNG)	
 
 3. A report that shows the count of the HTTP response codes.
 	
 	- `source="apache_logs.txt" | top status`
-	![Search](/Images/Part_1-Activity/P2_search_the_count_of_the_HTTP_response_codes.PNG)
-	![Report](/Images/Part_1-Activity/P2_Report_the_count_of_the_HTTP_response_codes.PNG)	
+	![Search](/Images/Part_2-Activity/P2_search_the_count_of_the_HTTP_response_codes.PNG)
+	![Report](/Images/Part_2-Activity/P2_Report_the_count_of_the_HTTP_response_codes.PNG)	
 	
 
 **Alerts**: Design the following alerts:
@@ -163,7 +163,7 @@ On your dashboard, add the ability to change the time range for all your visuali
 1. Determine a baseline and threshold for hourly count of activity from a country other than the United States. Create an alert to trigger when the threshold has been reached. The alert should trigger an email to SOC@VSI-company.com.
 
 	- `source="apache_logs.txt"  | iplocation clientip | where Country!="United States"`
-	![Search](/Images/Part_1-Activity/P2_search_baseline_and_threshold_for_hourly_count_of_activity_from_a_country_other_than_the_United_States.PNG)		
+	![Search](/Images/Part_2-Activity/P2_search_baseline_and_threshold_for_hourly_count_of_activity_from_a_country_other_than_the_United_States.PNG)		
 	- The average activity per hour is approximately 80.
 
 	- Therefore the threshold is set for 200.
@@ -175,12 +175,12 @@ On your dashboard, add the ability to change the time range for all your visuali
 	- Set alert to trigger when count is greater than chosen threshold of (200).
 
 	- Add action **Send email** to SOC@VSI-company.com.
-    ![Alert](/Images/Part_1-Activity/P2_Alert_baseline_and_threshold_for_hourly_count_of_activity_from_a_country_other_than_the_United_States.PNG)             
+    ![Alert](/Images/Part_2-Activity/P2_Alert_baseline_and_threshold_for_hourly_count_of_activity_from_a_country_other_than_the_United_States.PNG)             
 
 2. Determine a baseline and threshold for hourly count of the HTTP POST method. Create an alert to trigger when the threshold has been reached. The alert should trigger an email to SOC@VSI-company.com.
 
 	- `source="apache_logs.txt" method=POST`
-	![Search](/Images/Part_1-Activity/P2_search_baseline_and_threshold_for_hourly_count_of_the_HTTP_POST_method.PNG)
+	![Search](/Images/Part_2-Activity/P2_search_baseline_and_threshold_for_hourly_count_of_the_HTTP_POST_method.PNG)
 	- The average activity per hour is approximately two.
 
 	- Therefore the threshold is set for 15.
@@ -192,57 +192,57 @@ On your dashboard, add the ability to change the time range for all your visuali
 	- Set alert to trigger when count is greater than chosen threshold of (15).
 
 	- Add action **Send email** to SOC@VSI-company.com.
-   ![Alert](/Images/Part_1-Activity/P2_Alert_baseline_and_threshold_for_hourly_count_of_the_HTTP_POST_method.PNG) 		
+   ![Alert](/Images/Part_2-Activity/P2_Alert_baseline_and_threshold_for_hourly_count_of_the_HTTP_POST_method.PNG) 		
 
 **Visualizations and Dashboards**: Design the following visualization and add them to a dashboard called Apache WebServer Monitoring.
 
 1. A line chart that displays the different HTTP `methods` field over time.
 
 	- `source="apache_logs.txt" | timechart span=1h count by method`
-    ![Search](/Images/Part_1-Activity/P2_search_different_HTTP_methods_field_over_time.PNG)	
+    ![Search](/Images/Part_2-Activity/P2_search_different_HTTP_methods_field_over_time.PNG)	
 	- Select **Visualizations** > **Line Chart**.
-    ![Line_Chart](/Images/Part_1-Activity/P2_Dashboard_different_HTTP_methods_field_over_time.PNG)
+    ![Line_Chart](/Images/Part_2-Activity/P2_Dashboard_different_HTTP_methods_field_over_time.PNG)
 
 2. A geographical map showing the location based on the `clientip` field.
 
     - `source="apache_logs.txt" | iplocation clientip | geostats count`
-    ![Search](/Images/Part_1-Activity/P2_search_location_based_on_the_clientip_field.PNG)
+    ![Search](/Images/Part_2-Activity/P2_search_location_based_on_the_clientip_field.PNG)
 	- Select **Visualizations** > **Geostats**.
-    ![Geostats](/Images/Part_1-Activity/P2_Dashboard_location_based_on_the_clientip_field.PNG)
+    ![Geostats](/Images/Part_2-Activity/P2_Dashboard_location_based_on_the_clientip_field.PNG)
 
 3. A bar, column, or pie chart that displays the count of different URIs.
 
 	- `source="apache_logs.txt" | top limit=10 uri`
-    ![Search](/Images/Part_1-Activity/P2_search_counts_of_different_URIs.PNG)
+    ![Search](/Images/Part_2-Activity/P2_search_counts_of_different_URIs.PNG)
     - Select **Visualizations** > **Bar/Column/Pie Chart**.
-    ![Bar_Chart](/Images/Part_1-Activity/P2_Dashboard_counts_of_different_URIs.PNG)
+    ![Bar_Chart](/Images/Part_2-Activity/P2_Dashboard_counts_of_different_URIs.PNG)
 
 4. A bar, column, or pie chart that displays the counts of the top 10 countries.
 
 	- `source="apache_logs.txt"  | iplocation clientip | top limit=10 Country`
-    ![Search](/Images/Part_1-Activity/P2_search_counts_of_the_top_10_countries.PNG)
+    ![Search](/Images/Part_2-Activity/P2_search_counts_of_the_top_10_countries.PNG)
 	- Select **Visualizations** > **Bar/Column/Pie Chart**.
-    ![Pie_Chart](/Images/Part_1-Activity/P2_search_counts_of_the_top_10_countries.PNG)
+    ![Pie_Chart](/Images/Part_2-Activity/P2_search_counts_of_the_top_10_countries.PNG)
 
 5. A statistical chart that illustrates the count of different user agents.
 
 	- `source="apache_logs.txt"  |  top limit=10 useragent`
-    ![Search](/Images/Part_1-Activity/P2_search_the_count_of_different_user_agents.PNG)
-    ![Stats_Chart](/Images/Part_1-Activity/P2_Dashboard_the_count_of_different_user_agents.PNG)
+    ![Search](/Images/Part_2-Activity/P2_search_the_count_of_different_user_agents.PNG)
+    ![Stats_Chart](/Images/Part_2-Activity/P2_Dashboard_the_count_of_different_user_agents.PNG)
 
 
 6. One single value visualization of your choice: radial gauge, marker gauge, etc.     
 
-	![Search](/Images/Part_1-Activity/P2_Single_Value_Visualization-6_method-GET.PNG)
-    ![Single_Value](/Images/Part_1-Activity/P2_Dashboard_Single_Value_Visualization-6_method-GET.PNG)
-	![Search](/Images/Part_1-Activity/P2_Single_Value_Visualization-6_status-404.PNG)
-    ![Single_Value](/Images/Part_1-Activity/P2_Dashboard_Single_Value_Visualization-6_status-404.PNG)
+	![Search](/Images/Part_2-Activity/P2_Single_Value_Visualization-6_method-GET.PNG)
+    ![Single_Value](/Images/Part_2-Activity/P2_Dashboard_Single_Value_Visualization-6_method-GET.PNG)
+	![Search](/Images/Part_2-Activity/P2_Single_Value_Visualization-6_status-404.PNG)
+    ![Single_Value](/Images/Part_2-Activity/P2_Dashboard_Single_Value_Visualization-6_status-404.PNG)
 		
 On your dashboard, add the ability to change the time range for all your visualizations.
 
-![Dashboard](/Images/Part_1-Activity/P2_Apache WebServer Monitoring Dashboad.PNG)
-![Dashboard](/Images/Part_1-Activity/P2_Apache WebServer Monitoring Dashboad-1.PNG)
-![Dashboard](/Images/Part_1-Activity/P2_Apache WebServer Monitoring Dashboad-2.PNG)
+![Dashboard](/Images/Part_2-Activity/P2_Apache WebServer Monitoring Dashboad.PNG)
+![Dashboard](/Images/Part_2-Activity/P2_Apache WebServer Monitoring Dashboad-1.PNG)
+![Dashboard](/Images/Part_2-Activity/P2_Apache WebServer Monitoring Dashboad-2.PNG)
      
 ---
 
