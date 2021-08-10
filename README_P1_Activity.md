@@ -238,12 +238,12 @@ On your dashboard, add the ability to change the time range for all your visuali
 	![Search](/Images/Part_2-Activity/P2_Single_Value_Visualization-6_status-404.PNG)
     ![Single_Value](/Images/Part_2-Activity/P2_Dashboard_Single_Value_Visualization-6_status-404.PNG)
 		
-On your dashboard, add the ability to change the time range for all your visualizations.
+On your dashboard, add the ability to change the time range for all your visualizations.  
 
 ![Dashboard](/Images/Part_2-Activity/P2_Apache WebServer Monitoring Dashboad.PNG)
-![Dashboard](/Images/Part_2-Activity/P2_Apache WebServer Monitoring Dashboad-1.PNG)
-![Dashboard](/Images/Part_2-Activity/P2_Apache WebServer Monitoring Dashboad-2.PNG)
-     
+![Dashboard](/Images/Part_1-Activity/P1_Windows_Server_Monitoring_DashBoard-2.PNG)
+
+
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
