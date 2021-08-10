@@ -229,6 +229,18 @@ Did you detect a suspicious volume of deleted accounts?
 - Based on the URI being accessed, what could the attacker potentially be doing?	
   - **_The attacker may be trying to brute force the VSI logon page._**
 
+
+`Before Apache WebServer Logs Attack Dashboard`
+
+![Apache_WebServer_Monitoring_Dashboad](/Images/Part_2-Activity/P2_Apache_WebServer_Monitoring_Dashboad.PNG)
+![Apache_WebServer_Monitoring_Dashboad-1](/Images/Part_2-Activity/P2_Apache_WebServer_Monitoring_Dashboad-1.PNG)
+![Apache_WebServer_Monitoring_Dashboad-2](/Images/Part_2-Activity/P2_Apache_WebServer_Monitoring_Dashboad-2.PNG)
+
+`Dashboad after the Apache WebServer Logs Attack`
+![Apache WebServer Monitoring Dashboad_attack_logs](/Images/Part_2-Activity/P2_Apache WebServer Monitoring Dashboad_attack_logs.PNG)
+![Apache WebServer Monitoring Dashboad_attack_logs-1](/Images/Part_2-Activity/P2_Apache WebServer Monitoring Dashboad_attack_logs-1.PNG)
+![Apache WebServer Monitoring Dashboad_attack_logs-2](/Images/Part_2-Activity/P2_Apache WebServer Monitoring Dashboad_attack_logs-2.PNG)
+
 ---
     
 
