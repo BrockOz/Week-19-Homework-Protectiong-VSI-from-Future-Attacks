@@ -119,18 +119,17 @@ Did you detect a suspicious volume of deleted accounts?
     
 #### Dashboard Analysis for Signatures with Bar, Graph, Pie Charts
 
-- The suspicious findings should be similar to the time chart.
+  - **_All Charts are showing the same information as above for the Signatures._**
 			
 #### Dashboard Analysis for Users with Bar, Graph, Pie Charts
 
-- The suspicious findings should be similar to the time chart.
+  - **_All Charts are showing the same information as above for the Users._**
 
 #### **Dashboard Analysis for Users with Statistical Chart**   
 
 - What would be the advantage/disadvantage of using this report, compared to the other user panels you created?
 
-	- The answers can vary between groups, but one disadvantage of the stats chart compared to a time chart is that it shows a cumulative perspective, while a time chart shows suspicious activity over a more specific, shorter time frame.
-
+  - **_There is only one advantage of the stats chart, as it will only give the total count of the users activity or the percentage of the activity. However, the disadvantage of the stats chart compared to a chart will show a cumulative perspective, while a time chart shows the suspicious activity over a more specific, and shorter time frame._**
      
 ---
 
