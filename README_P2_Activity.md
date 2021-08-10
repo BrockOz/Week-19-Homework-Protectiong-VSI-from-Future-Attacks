@@ -10,14 +10,16 @@ Did you detect any suspicious changes in severity?
 - Yes. The percentages changed from:
 
 	```
-	High: 6%
-	Informational: 93%
+	High: 6.91%
+	Informational: 93.09%
 	```
+	![Severity](/Images/Part_1-Activity/P1_Report_top_severity.PNG)
 	to: 
 	```
-	High: 20%
-	Informational: 80%
+	High: 20.22%
+	Informational: 79.78%
 	```
+	![Severity](/Images/Part_1-Activity/P1_Report_top_severity_windows_server_attack_logs.PNG)
 
 - This indicates an increase in the high severity cases.
 
@@ -27,44 +29,57 @@ Did you detect any suspicious changes in failed activities?
 
 - Yes. The percentages changed from:
 	```
-	success: 97%
-	failure: 3%
+	success: 97.02%
+	failure: 2.98%
 	```
+	![Status](/Images/Part_1-Activity/P1_Report_Windows_status.PNG)
 
 	 to:
 	```
-	success: 98%
-	failure: 1.5%
+	success: 98.44%
+	failure: 1.56%
 	```
+	![Status](/Images/Part_1-Activity/P1_Report_top_status_windows_server_attack_logs.PNG)
 
 - This indicates that there is not a major change in the cumulative failure of events. 
    
 ---
 #### Alert Analysis for Failed Windows Activity
 
-- Several of the answers are dependent on what the groups select for their baselines and thresholds.
+![Alert_Failed_Windows_Activity](/Images/Part_1-Activity/P1_Alert_for_Failed_Windows_Activity.PNG)
 
-- There is some potential suspicious activity for failed activity at 8 a.m. on Weds, March 25th.
+  - **_There is some potential suspicious activity for failed activity between 8 a.m. and 9 a.m. on Weds, March 25th._**
 
-- The count of activity is 35 events during this hour.
+![Suspicious_Failed_Activity](/Images/Attack_Logs/P2-3_Suspicious_failed_Windows_activity.PNG)
+
+  - **_The count of activity is 35 events during this hour, "A privileged service was called, where the user account was deleted, Domain Policies were changed, A user account was created, An attempt was made to reset an accounts password, and A computer account was deleted."_**
                 
    
 #### Alert Analysis for Successful Logons
 
-- Several of the answers are dependent on what the groups select for their baselines and thresholds.
+![Alert_Anaylsis_for_Successful_Logons](/Images/Part_1-Activity/P1_Alert_Signatures_with_successfully_logged_on.PNG)
 
-- There is some potential suspicious activity for failed activity at 11 a.m and 12 p.m. on Weds, March 25th.
+  - **_There is some potential suspicious activity for failed activity at 11 a.m and 12 p.m. on Weds, March 25th._**
 
-- The count of activity is 196 at 11 a.m. and 77 at 12 p.m. 
+![Account_was_Successfully_Logged_ON](/Images/Attack_Logs/P2-4_suspicious_volume_of_successful_logons.PNG)
 
-- The primary user logging in is `user j`.
+  - **_The count of activity is 196 at 11 a.m. and 77 at 12 p.m._**
+
+  - **_The primary user logging in is `user j`._**
+
+![User_J](/Images/Attack_Logs/P2-4-a_suspicious_volume_of_successful_logons_user_j.PNG)
+
+  - **_Yes, it would have alerted the SOC Analyst of the suspicious logons._**  
+  - **_No, it is set appropriately for the hourly settings, it would have also triggered an alert for the activity for the second hour from 12 p.m. to 1 p.m. on the same day._**  
 
 #### Alert Analysis for Deleted Accounts
 
 Did you detect a suspicious volume of deleted accounts?  
-	
-- There was no suspicious activity of deleted accounts.
-   
+
+![Alert_a_user_account_was_deleted](/Images/Part_1-Activity/P1_Alert_a_user_account_was_deleted.PNG)  
+
+  - **_There was no suspicious activity of deleted accounts._**
+![Suspicious_volume_of_deleted_accounts](/Images/Attack_Logs/P2-5_suspicious_volume_of_deleted_accounts.PNG)   
 ---
 #### Dashboard Analysis for Time Chart of Signatures
 
