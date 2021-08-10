@@ -197,31 +197,37 @@ Did you detect a suspicious volume of deleted accounts?
 #### Dashboard Analysis for Time Chart of HTTP Methods
   
 - Does anything stand out as suspicious?
-	- Yes, there were suspicious activities of the POST and GET method.
+  - **_Yes, there were suspicious activities of the `POST` and `GET` method._**
 
 - What was the method that seems to be used in the attack? What time did it begin and end, and what was the peak count?
-	-  The POST method was used, starting at 8 p.m. and ending at 9 p.m. The peak count was 1,296.
+  - **_The `POST` method was used, starting at `8 p.m. and ending at 9 p.m.` The peak count was `1,296`._**
+  - **_The `GET` method was used, starting at `6 p.m. and ending at 7 p.m.` The peak count was `729`.
 
-	- THE GET method was used, starting at 6 p.m. and ending at 7 p.m. The peak count was 729.
+![Dashboard_Differnt_HTTP_Methods](/Images/Part_2-Activity/P2_Dashboard_Differnt_HTTP_Methods.PNG)  
     
  #### Dashboard Analysis for Cluster Map
   
 - Does anything stand out as suspicious? What new country, city on the map has a high volume of activity?
-	- Yes, there is suspicious activity in Ukraine.
+  - **_Yes, there is suspicious activity in `Ukraine.`_**
+
+![Apache WebServer Monitoring Dashboad_Top_10_countries](/Images/Part_2-Activity/P2_Apache WebServer Monitoring Dashboad_Top_10_countries.PNG)  
 
 - What is the count of that country, city?
-	- When zoomed in, we can see the cities in Ukraine are: 
-		- Kiev: Count of 872	
-		- Kharkiv: Count of 432
-                    
-    
+  - **_When zoomed in, we can see the cities in `Ukraine` are:_**  
+    - **_`Kiev:` Count of `439`_**  	
+    - **_`Kharkiv:` Count of `433`_**  
+    - **_`Lvov:` Count of `5`_**  
+
+![Dashboard_location_based_on_the_clientip_field-Zoomed_on_Ukraine](/Images/Part_2-Activity/P2_Dashboard_location_based_on_the_clientip_field-Zoomed_on_Ukraine.PNG)
+
 #### Dashboard Analysis for URI Data
 - Does anything stand out as suspicious? What URI is being hit the most?
+  - **_Yes, there is suspicious activity against the main VSI logon page: `/VSI_Account_logon.php`._**
 
-	- Yes, there is suspicious activity against the main VSI logon page: `/VSI_Account_logon.php`.
+![Dashboard_counts_of_different_URIs](/Images/Part_2-Activity/P2_Dashboard_counts_of_different_URIs.PNG)
 
 - Based on the URI being accessed, what could the attacker potentially be doing?	
-	- The attacker may be trying to brute force the VSI logon page.
+  - **_The attacker may be trying to brute force the VSI logon page._**
 
 ---
     
