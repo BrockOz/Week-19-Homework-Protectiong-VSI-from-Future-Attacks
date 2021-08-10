@@ -84,30 +84,38 @@ Did you detect a suspicious volume of deleted accounts?
 #### Dashboard Analysis for Time Chart of Signatures
 
 - Does anything stand out as suspicious? What signatures stand out?
-	- Yes, the signatures that have suspicious activity are: User account was locked out, attempt was made to reset a users password, and an account was successfully logged on.
+  - **_Yes, the signatures that have suspicious activity are: An attempt was made to reset a users password (39.955%), A user account was locked out (34.003%), and An account was successfully logged on (8.111%)._**
 
+`Before Windows Server Attack Dashboard`
+
+![Windows_Server_Monitoring_DashBoard](/Images/Part_1-Activity/P1_Windows_Server_Monitoring_DashBoard.PNG)
+![Windows_Server_Monitoring_DashBoard-2](/Images/Part_1-Activity/P1_Windows_Server_Monitoring_DashBoard-2.PNG)
+
+`Dashboad after the Windows Server Attack`
+![Windows_Server_Monitoring_DashBoard_attacks_on_the_server](/Images/Part_2-Activity/P2_Windows_Server_Monitoring_DashBoard_attacks_on_the_server.PNG)
+![Windows_Server_Monitoring_DashBoard_attacks_on_the_server-2](/Images/Part_2-Activity/P2_Windows_Server_Monitoring_DashBoard_attacks_on_the_server-2.PNG)
 
 - What time did it start and stop for each signature? What is the peak count of the different signatures?
 
-	- User account was locked out: Started around 1 a.m. and ended at 3 a.m. on March 25th. The peak count was 896.
+  - **_`A user account was locked out:` Started around `1 a.m. and ended at 3 a.m. on March 25th.` The peak count was `896`, and the total for the two hours was `(805 + 896 = 1701).`_**  
+  - **_`An attempt was made to reset a users password:` Started around `9 a.m. and ended at 11 a.m. on March 25th.` The peak count was `1,258`, and the total for the two hours was `(1258 + 761 = 2019).`_**  
+  - **_`The account was successfully logged on:` Started around `11 a.m. and ended at 1 p.m. on March 25th.` The peak count was `196`, and the total for the two hours was `(196 + 77 = 273).`_**  
 
-	- An attempt was made to reset a users password: Started around 9 a.m. and ended at 11 a.m. on March 25th. The peak count was 1,258.
-
-	- The account was successfully logged on: Started around 11 a.m. and ended at 1 p.m. on March 25th. The peak count was 196.
+![Dashboard_Signatures_attacks_logd](/Images/Attack_Logs/P2-1_Dashboard_Signatures_attacks_logd.PNG)
 
  #### Dashboard Analysis for Users
 
 - Does anything stand out as suspicious? Which users stand out?
-	- Yes, the users that have suspicious activity are users `A`, `K`, and `J`.
+
+  - **_Yes, the users that have suspicious activity are users `A`, `K`, and `J`._**
 
 - What time did it begin and stop for each user? What is the peak count of the different user?
 
-	- `User A`: Started around 1 a.m. and ended at 3 a.m. on March 25th. Peak count was 985.
+  - **_`User A:` Started around `1 a.m. and ended at 3 a.m. on March 25th.` Peak count was `984`, and the total for the two hours was `(799 + 984 = 1783).`_**
+  - **_`User K:` Started around `9 a.m. and ended at 11 AM on March 25th.` Peak count was `1,256`, and the total for the two hours was `(1256 + 761 = 2017).`_**  
+  - **_`User J:` Started around `11 a.m. and ended at 1 p.m. on March 25th.` Peak count was `196`, and the total for the two hours was `(196 + 82 = 278).`_**  
 
-	- `User K`: Started around 9 a.m. and ended at 11 AM on March 25th.  Peak count was 1,256.
-
-	- `User J`: Started around 11 a.m. and ended at 1 p.m. on March 25th. Peak count was 196.
-	
+![Dashboard_Users_attacks_logd](/Images/Attack_Logs/P2-1_Dashboard_Users_attacks_logd.PNG)
     
 #### Dashboard Analysis for Signatures with Bar, Graph, Pie Charts
 
