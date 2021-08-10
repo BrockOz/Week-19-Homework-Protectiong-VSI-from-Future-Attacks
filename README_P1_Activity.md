@@ -240,8 +240,10 @@ On your dashboard, add the ability to change the time range for all your visuali
 		
 On your dashboard, add the ability to change the time range for all your visualizations.  
 
-![Dashboard](/Images/Part_2-Activity/P2_Apache WebServer Monitoring Dashboad.PNG)
-![Dashboard](/Images/Part_1-Activity/P1_Windows_Server_Monitoring_DashBoard-2.PNG)
+![Dashboard](/Images/Part_2-Activity/P2_Apache_WebServer_Monitoring_Dashboad.PNG)
+![Dashboard](/Images/Part_2-Activity/P2_Apache_WebServer_Monitoring_Dashboad-1.PNG)
+![Dashboard](/Images/Part_2-Activity/P2_Apache_WebServer_Monitoring_Dashboad-2.PNG)
+
 
 
 ---
