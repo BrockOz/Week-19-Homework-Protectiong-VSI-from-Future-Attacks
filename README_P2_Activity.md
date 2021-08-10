@@ -118,11 +118,15 @@ Did you detect a suspicious volume of deleted accounts?
 ![Dashboard_Users_attacks_logd](/Images/Attack_Logs/P2-1_Dashboard_Users_attacks_logd.PNG)
     
 #### Dashboard Analysis for Signatures with Bar, Graph, Pie Charts
-
+- Does anything stand out as suspicious?
+  - **_`No`_**
+- Do the results match your findings in your time chart for signatures?
   - **_All Charts are showing the same information as above for the Signatures._**
 			
 #### Dashboard Analysis for Users with Bar, Graph, Pie Charts
-
+- Does anything stand out as suspicious?
+  - **_`No`_**
+- Do the results match your findings in your time chart for users?
   - **_All Charts are showing the same information as above for the Users._**
 
 #### **Dashboard Analysis for Users with Statistical Chart**   
@@ -139,41 +143,55 @@ Did you detect a suspicious volume of deleted accounts?
 #### Report Analysis for Methods
 
 - Did you detect any suspicious changes in HTTP methods? If so, which one?
-	- Yes, there was a suspicious change in the HTTP POST method, which was raised from 1% to 29%.
+  - **_Yes, there was a suspicious change in the HTTP `POST method`, which was raised from `1%` to `29%`or the `count` jumped from `106` to `1324`._**
+
+![Report_Differnt_HTTP_Methods](/Images/Part_2-Activity/P2_Report_Differnt_HTTP_Methods.PNG)
+![Report_Differnt_HTTP_Methods_attacks_logs](/Images/Part_2-Activity/P2_Report_Differnt_HTTP_Methods_attacks_logs.PNG)
 
 - What is that method used for?
 
-	- POST is used to submit or update information to a web server.
+  - **_`POST` is used to submit or update information to a web server._**
 							
    
 #### Report Analysis for Referrer Domains
 
 - Did you detect any suspicious changes in referrer domains?
 	
-	- There were no suspicious referrers during the attack.
+  - **_There were no major suspicious referrers during the attack. Only minor changes to the first two domains by a couple of percentages._**
+
+![Report_Top_10_Domains](/Images/Part_2-Activity/P2_Report_Top_10_Domains.PNG)
+![Report_Top_10_Domains_attacks_logs](/Images/Part_2-Activity/P2_Report_Top_10_Domains_attacks_logs.PNG)
 
 #### Report Analysis for HTTP Response Codes
 - Did you detect any suspicious changes in HTTP response codes? 
 									
-	- There are several small changes, but the most prominent is the 404 response code, which increased from 2% to 15%.
+  - **_There are several small changes, but the most prominent is the `404` response code, which increased from `2% to 15%`. The `200` response code went down from `91% to 83%`._**  
+
+![Report_the_count_of_the_HTTP_response_codes](/Images/Part_2-Activity/P2_Report_the_count_of_the_HTTP_response_codes.PNG)  
+![Report_the_count_of_the_HTTP_response_codes_attack_logs](/Images/Part_2-Activity/P2_Report_the_count_of_the_HTTP_response_codes_attack_logs.PNG)
     
 ---
 #### Alert Analysis for International Activity
 
 - Did you detect any suspicious volume of international activity? If so what was the count of the hour it occurred in?
-	- There was activity in Ukraine at 8 p.m. on Weds, March 25th, and had a count of 1,369 events.
 
-- The other answers are dependent on each group's baselines and thresholds.
+  - **_There was activity in `Ukraine` between `8 p.m. and 9 p.m. on Weds, March 25th,` and had a count of `935` events._**
+  - **_Yes, as the threshold was set at `200`, so this activity would be triggered as part of the alert._**  
+  - **_No, as it’s above the activity set threshold._**  
+
+![Alert_baseline_and_threshold_for_hourly_count_of_activity_from_a_country_other_than_the_United_States](/Images/Part_2-Activity/P2_Alert_baseline_and_threshold_for_hourly_count_of_activity_from_a_country_other_than_the_United_States.PNG)  
+![Search_baseline_and_threshold_for_hourly_count_of_activity_from_a_country_other_than_the_United_States_attacks_logs](/Images/Part_2-Activity/P2_search_baseline_and_threshold_for_hourly_count_of_activity_from_a_country_other_than_the_United_States_attacks_logs.PNG)  
 
 
 #### Alert Analysis for HTTP POST Activity
 
 - Did you detect any suspicious volume of HTTP POST activity? If so, what was the count of the hour it occurred in and when did it occur?
 
-	- There was a spike in POST method activity at 8 p.m. on Weds, March 25th, and had a count of 1,296 events.
+  - **_There was a spike in `POST` method activity between `8 p.m. and 9 p.m. on Weds, March 25th`, and had a count of `1,296` events._**
+  - **_No, the threshold set is at 15 counts, this would have been triggered._**
 
-- The other answers are dependent on each group's baselines and thresholds.
- 
+![Alert_baseline_and_threshold_for_hourly_count_of_the_HTTP_POST_method](/Images/Part_2-Activity/P2_Alert_baseline_and_threshold_for_hourly_count_of_the_HTTP_POST_method.PNG)  
+
 ---
 
 #### Dashboard Analysis for Time Chart of HTTP Methods
