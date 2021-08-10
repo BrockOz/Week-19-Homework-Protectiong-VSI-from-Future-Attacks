@@ -210,7 +210,7 @@ Did you detect a suspicious volume of deleted accounts?
 - Does anything stand out as suspicious? What new country, city on the map has a high volume of activity?
   - **_Yes, there is suspicious activity in `Ukraine.`_**
 
-![Apache WebServer Monitoring Dashboad_Top_10_countries](/Images/Part_2-Activity/P2_Apache WebServer Monitoring Dashboad_Top_10_countries.PNG)  
+![Apache WebServer Monitoring Dashboad_Top_10_countries](/Images/Part_2-Activity/P2_Apache_WebServer_Monitoring_Dashboad_Top_10_countries.PNG)  
 
 - What is the count of that country, city?
   - **_When zoomed in, we can see the cities in `Ukraine` are:_**  
