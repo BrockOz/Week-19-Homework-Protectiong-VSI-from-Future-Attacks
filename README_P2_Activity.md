@@ -252,7 +252,7 @@ Did you detect a suspicious volume of deleted accounts?
 ## :sunglasses: `Ketan Vithal Patel` :sunglasses:  
 
 
-### `August 3, 2021 -- UofT Cybersecurity - Boot Camp`
+### `Tuesday, August 3, 2021 -- UofT Cybersecurity - Boot Camp`
 #### :rose::rose:`Jai Shri Swaminarayan`:rose::rose:
 ```
 હરે કૃષ્ણ હરે કૃષ્ણ, કૃષ્ણ કૃષ્ણ હરે હરે |  Hare Krishna Hare Krishna, Krishna Krishna Hare Hare |
