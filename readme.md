@@ -63,3 +63,16 @@ Submit your findings in BootCampSpot!
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
+---
+
+## Week  Homework Solution: 
+
+Refer to the following solution files for the homework worksheets: 
+
+* [Solution Guide: Part 1 - Master of the SOC](/README_P1_Activity.md)  
+* [Solution Guide: Part 2 - Defend Your SOC](README_P2_Activity.md)  
+* [Solution Unit 19 Homework: Protecting VSI from Future Attacks](https://github.com/karma-786/Week-19-Homework-Protectiong-VSI-from-Future-Attacks/blob/main/Week%2019%20Homework%20Protecting%20VSI%20from%20Future%20Attacks.md)  
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
